@@ -1,5 +1,7 @@
 package reservasDeportivas;
 
+import java.time.LocalDateTime;
+
 public class Reserva {
     private int idPista;
     private String fecha;
@@ -8,12 +10,12 @@ public class Reserva {
     /**
      * crea una reserva dera una pista
      * @param idPista id de la pista
-     * @param fecha fecha de la reserva
+     * @param fecha2 fecha de la reserva
      * @param duracion duracion de la reserva
      */
-    public Reserva(int idPista, String fecha, int duracion) {
+    public Reserva(int idPista, LocalDateTime fecha2, int duracion) {
         this.idPista = idPista;
-        this.fecha = fecha;
+        this.fecha = fecha2;
         this.duracion = duracion;
     }
     /**

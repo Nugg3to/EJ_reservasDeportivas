@@ -1,5 +1,6 @@
 package reservasDeportivas;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,7 +24,7 @@ public class SistemaReservasDeportivas {
      * 
      * @return devuelve verdadero si se puede reservar, falso si no
      */
-    public boolean reservarPista(int idPista, String fecha, int duracion) {
+    public boolean reservarPista(int idPista, LocalDateTime fecha, int duracion) {
         if (idPista < 0 || idPista >= MAX_PISTAS) {
             return false; // ID de pista inválido
         }
