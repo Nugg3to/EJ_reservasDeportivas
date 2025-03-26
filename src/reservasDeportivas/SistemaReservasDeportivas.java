@@ -26,7 +26,7 @@ public class SistemaReservasDeportivas {
         if (reserva.getIdPista() < 0 || reserva.getIdPista() >= MAX_PISTAS) {
             return false; // ID de pista inválido
         }
-        Object fecha;
+        LocalDateTime fecha = null;
 		for (Reserva r : data.reservas) {
             if (r.getIdPista() == reserva.getIdPista() && r.getFecha().equals(fecha)) {
                 return false; // La pista ya está reservada en esa fecha
