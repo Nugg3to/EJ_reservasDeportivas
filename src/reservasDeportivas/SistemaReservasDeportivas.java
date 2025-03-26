@@ -70,7 +70,7 @@ public class SistemaReservasDeportivas {
      * @param idPista id de la pista
      * @return devuelve verdadero s se puede apagar la luz
      */
-    public boolean apagarLuces(int idPista) {
+    public boolean desactivarIluminacion(int idPista) {
         if (idPista < 0 || idPista >= MAX_PISTAS) {
             return false; // ID de pista inválido
         }
